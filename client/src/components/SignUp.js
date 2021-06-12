@@ -146,7 +146,6 @@ function SignUp(props) {
   );
 }
 const mapStateToProps = (state,ownProps) => {
-  console.log(ownProps)
   return { error: state.error, errorMsg: state.error.msg,auth:state.auth};
 };
 export default connect(mapStateToProps,{SignUP})(SignUp)

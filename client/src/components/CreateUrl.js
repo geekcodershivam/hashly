@@ -36,7 +36,6 @@ function CreateUrl(props) {
         setmessage('success');
       })
       .catch((err) => {
-        console.log(err.response.data['error']);
         setmessage(err.response.data['error']);
 
         

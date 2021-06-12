@@ -36,7 +36,6 @@ export const SignIN = (data) => (dispatch) => {
     .post('/signin', data)
     .then((res) => {
       
-      console.log(res);
 
       dispatch({
         type: LOGIN_SUCCESS,

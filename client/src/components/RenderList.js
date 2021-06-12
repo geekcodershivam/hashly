@@ -2,7 +2,6 @@ import React from 'react'
 import TrendingUpOutlinedIcon from '@material-ui/icons/TrendingUpOutlined';
 import Chart from './Chart'
 export default function RenderList(props) {
-  console.log(props)
   const {originalUrl,owned,slug,visits,visitsFB ,visitsIG,visitsYT}=props.obj;
   let dataArray=[visitsFB,visitsIG,visitsYT,visits];
   let today=props.obj.createAt.split('T');
