@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const User = mongoose.model("User")
 const {
     JWT_KEY
-} = require('../keys');
+} = require('../config/keys');
 
 module.exports=(req,res,next)=>{
     const {authorization}=req.headers;

@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const {
     JWT_KEY
-} = require('../keys');
+} = require('../config/keys');
 
 // const requireLogin=require('../middleware/requireLogin')
 // router.get('/home',requireLogin,(req,res)=>{
