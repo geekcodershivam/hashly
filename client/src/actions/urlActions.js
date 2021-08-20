@@ -9,7 +9,7 @@ export const urlCreate = (data) => (dispatch) => {
     headers: { Authorization: 'Bearer ' + localStorage.getItem('token') },
   };
   axios
-    .post('/createurl', data, config)
+    .post('/api/createurl', data, config)
     .then((res) => {
       dispatch({
         type: URLS_SUCCESS,

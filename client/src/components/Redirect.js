@@ -14,7 +14,7 @@ export class Redirect extends Component {
       headers: { "Access-Control-Allow-Origin": "*",},
     };
     axios
-      .get(`/${urlCode.code}`,config)
+      .get(`/api/${urlCode.code}`,config)
       .then((res) => {
         this.setState({ redirectUrl: res.data.url });
         window.location.href = this.state.redirectUrl;

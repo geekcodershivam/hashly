@@ -1,5 +1,4 @@
 import {
-  AUTH_ERROR,
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT_SUCCESS,
@@ -12,7 +11,7 @@ import { returnErrors } from './errorActions';
 
 export const SignUP = (data) => (dispatch) => {
   axios
-    .post('/signup', data)
+    .post('/api/signup', data)
     .then((res) => {
       dispatch({
         type: REGISTER_SUCCESS,
@@ -33,7 +32,7 @@ export const SignUP = (data) => (dispatch) => {
 
 export const SignIN = (data) => (dispatch) => {
   axios
-    .post('/signin', data)
+    .post('/api/signin', data)
     .then((res) => {
       
 
