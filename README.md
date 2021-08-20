@@ -75,13 +75,13 @@ And see it working on http://localhost:3000
 
 ## API Spec
 
-| Request  | End Point  | Details                   |
-| -------- | ---------- | ------------------------- |
-| **POST** | /signup    | Register User             |
-| **POST** | /signin    | for signin                |
-| **POST** | /createurl | Create Url                |
-| **GET**  | /urls      | Fetch all details of urls |
-| **GET**  | /:slug?    | Redirect to Original url  |
+| Request  | End Point     | Details                   |
+| -------- | ------------  | ------------------------- |
+| **POST** | /signup       | Register User             |
+| **POST** | /signin       | for signin                |
+| **POST** | /createurl    | Create Url                |
+| **GET**  | /urls         | Fetch all details of urls |
+| **GET**  | /sh/:slug?    | Redirect to Original url  |
 
 ## Demo
 

@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Urls = mongoose.model('Url');
 const requireLogin = require('../middleware/requireLogin');
 
-router.post('/createurl', requireLogin, (req, res) => {
+router.post('/api/createurl', requireLogin, (req, res) => {
   let currentTime=Date.now();
   const { original, short } = req.body;
   if (!original || !short) {
@@ -44,7 +44,7 @@ router.post('/createurl', requireLogin, (req, res) => {
     });
 });
 
-router.get('/urls',requireLogin,(req, res) => {
+router.get('/api/urls',requireLogin,(req, res) => {
   Urls.find({owned:req.user._id})
     .populate('owned', '_id email name')
     .then((result) => {
@@ -55,7 +55,7 @@ router.get('/urls',requireLogin,(req, res) => {
     });
 });
 
-router.get('/:slug?', async (req, res) => {
+router.get('/api/:slug?', async (req, res) => {
   if (req.params.slug != undefined) {
     var data = await Urls.findOne({ slug: req.params.slug });
     if (data) {

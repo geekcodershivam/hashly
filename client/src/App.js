@@ -21,7 +21,7 @@ function App() {
         <Route path="/signin" component={SignIN} />
         <Route path="/signup" component={SignUP} />
         <Route path ="/home" component={Home} /> 
-        <Route exact path='/:code' component={Redirect} /> 
+        <Route exact path='/sh/:code' component={Redirect} /> 
         
 
         

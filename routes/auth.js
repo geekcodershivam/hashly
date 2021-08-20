@@ -13,7 +13,7 @@ const {
 //     res.send("welcome to home");
 // })
 
-router.post('/signup', (req, res) => {
+router.post('/api/signup', (req, res) => {
     const {
         name,
         email,
@@ -58,7 +58,7 @@ router.post('/signup', (req, res) => {
 
 })
 
-router.post('/signin', (req, res) => {
+router.post('/api/signin', (req, res) => {
     const {
         email,
         password
