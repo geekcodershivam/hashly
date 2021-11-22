@@ -2,6 +2,16 @@
 
 An URL shortening service written in **_express_**
 
+### Features
+
+1. User registration and login.
+2. Shorten URLs.
+3. Update and Delete shortened URLs.
+4. Graph representation of number of clicks.
+5. URL Analytics.
+6. Page Views.
+7. Unique Visitors
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
